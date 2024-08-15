@@ -1,0 +1,13 @@
+Present the proposal to handle this task in a doc file (file.doc or file.txt): 
+
+The solution I use is:
+
+1/ Data processing
++ Upload the data set scut_headface to the Roboflow platform, from here I can identify the layers in an image including face and head.
++ Split the included data set include: Training set 2323 images, Valid set 788 images, Test set 883 images
++ resize image to 640x640 decrease training time and increase performance by applying image transformations to all images in this dataset.
+
+2/ Training phase
++ Use yolov7 model from YOLOv7 github repository
++ Adjust the number of times to train the model to match the amount of GPU ( Reduced epochs from 55 to 24 )
+
